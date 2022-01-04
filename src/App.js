@@ -1,5 +1,6 @@
 import "./App.css";
 import Row from "./components/Row/Row";
+import Banner from "./components/Banner/Banner";
 import requests from "./requests";
 
 // API key: e88c15bf17a3128cbd63551c683340ca
@@ -8,6 +9,7 @@ import requests from "./requests";
 function App() {
   return (
     <div className="app">
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
